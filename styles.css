@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    direction: rtl; /* يجعل الكتابة من اليمين لليسار بشكل افتراضي */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+button {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #003399;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0044cc;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0044cc;
+    color: #fff;
+}
+
+@media print {
+    body {
+        font-size: 14px;
+        direction: ltr; /* عند الطباعة، النص سيكون من اليسار لليمين */
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        border: 1px solid #000;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

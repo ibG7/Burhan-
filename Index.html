@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج إدارة الفواتير</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- نموذج تسجيل الدخول -->
+<h2>تسجيل الدخول</h2>
+<form id="login-form">
+    <label for="username">اسم المستخدم:</label>
+    <input type="text" id="username" required><br>
+
+    <label for="password">كلمة المرور:</label>
+    <input type="password" id="password" required><br>
+
+    <button type="button" id="login-btn">تسجيل الدخول</button>
+</form>
+
+<!-- عرض المحتوى بعد تسجيل الدخول -->
+<div id="content" style="display:none;">
+    <h2>قائمة الأصناف</h2>
+    <div id="product-list">
+        <!-- الأصناف ستتم إضافتها هنا بواسطة JavaScript -->
+    </div>
+
+    <h2>قائمة الفواتير</h2>
+    <div id="invoice-list">
+        <!-- الفواتير ستتم إضافتها هنا بواسطة JavaScript -->
+    </div>
+
+    <!-- أزرار للإضافة والحذف للمستخدم المدير فقط -->
+    <div id="manager-actions" style="display:none;">
+        <button type="button" onclick="addProduct()">إضافة صنف</button>
+        <button type="button" onclick="addInvoice()">إضافة فاتورة</button>
+        <button type="button" onclick="deleteSelected()">حذف المحدد</button>
+    </div>
+
+    <!-- زر الطباعة لجميع المستخدمين -->
+    <button type="button" onclick="printSelected()">طباعة المحدد</button>
+</div>
+
+<!-- ربط السكربت بـ JS -->
+<script src="script.js"></script>
+</body>
+</html>
